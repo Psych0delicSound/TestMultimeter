@@ -19,16 +19,17 @@ A = V / R
 R = V / A
 ```
 
-- [ ] Install Unity 2022.1.23f1
+- [x] Install Unity 2022.1.23f1
+- [x] Make public GitHub repo
+
+- [ ] Fix 2022.1.23f1 issues
+	- [x] Make bee_backend wrapper
+	- [x] Install openssl 1.1
+
 - [x] Download 3d model
-
-- [ ] Make public GitHub repo
-- [ ] Make scene
-
-- [ ] ? Find font
-
-- [ ] Add TextMeshPro for divisions
-- [ ] Add TextMeshPro for current value
+- [x] Make basic scene set up
+- [x] Add TextMeshPro for divisions
+- [x] Add TextMeshPro for current output value
 
 - [ ] Make HUD with all values
 - [ ] Adapt HUD for scaling
@@ -42,12 +43,13 @@ R = V / A
 
 - [ ] Multimeter modes
 	- [ ] Neutral - 0
-	- [ ] R Resistance
+	- [ ] Ω Resistance
 	- [ ] A Current Strength
 	- [ ] V Direct Current
 	- [ ] V~ Alternating Current ?(0.01 in specs)
 - [ ] All float output must have 2 digits after . or ,
 
+- [ ] ? Find font and replace
 
 - [ ] Make Windows build and load to Releases in GitHub
 
