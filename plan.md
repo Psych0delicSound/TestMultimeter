@@ -17,8 +17,16 @@ P = A * A * R
 P = V * V / R
 
 V = A * R
+V = P / A
+V = SqrRt(P * R)
+
 A = V / R
+A = P / V
+A = SqrRt(P / R)
+
 R = V / A
+R = P / (A * A)
+R = V * V / P
 ```
 
 ===
@@ -44,17 +52,17 @@ R = V / A
 ---
 
 - [x] Make MVC architecture
-- [ ] Make interface for connected device / measuring point
+- [x] Make interface for connected device / measuring point
 
 ---
 
 - [x] Multimeter modes
-	- [ ] Neutral - 0
-	- [ ] Ω Resistance
-	- [ ] A Current Strength
-	- [ ] V Direct Current
-	- [ ] V~ Alternating Current ?(0.01 in specs)
-- [ ] All float output must have 2 digits after . or ,
+	- [x] Neutral - 0
+	- [x] Ω Resistance
+	- [x] A Current Strength
+	- [x] V Direct Current Voltage
+	- [x] V~ Alternating Current Voltage ?(0.01 in specs)
+- [x] View. Output float with 2 digits after . on display
 	
 ---
 
@@ -63,12 +71,8 @@ R = V / A
 
 ---
 
-- [ ] Make HUD with all values (only one active, others are 0)
+- [x] View. Make HUD with all values (only one active, others are 0)
 	- [ ] Adapt HUD for scaling
-
----
-
-- [ ] ? Find font and replace
 
 ---
 
@@ -77,3 +81,8 @@ R = V / A
 ---
 
 - [ ] Fill and send Form
+
+===
+
+1 Day: 4 Hours
+2 Day: 3 Hours

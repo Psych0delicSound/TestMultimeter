@@ -6,8 +6,8 @@ public enum MultimeterMode
     Current,
     Resistance,
     Neutral,
-    DirectCurrent,
-    AlternatingCurrent
+    DirectCurrentVoltage,
+    AlternatingCurrentVoltage
 }
 
 public class MultimeterModel : MonoBehaviour
@@ -17,6 +17,13 @@ public class MultimeterModel : MonoBehaviour
 
     public event Action<MultimeterMode> ActiveModeChanged;
     public event Action<float> MeasuredValueChanged;
+    
+
+    [SerializeField] private Device _measurableOnProbe1;/*,
+                                    measurableOnProbe2;*/
+/*  I found multimeter should output differnce from two probes,
+    but i am not sure about device implementation, so now it just taking one value */
+    public Device MeasurableOnProbe1 => _measurableOnProbe1;
 
 
     [Serializable]
@@ -47,9 +54,10 @@ public class MultimeterModel : MonoBehaviour
         }
     }
 
-    public void SetMeasuredValue()
+    public void SetMeasuredValue(float newValue)
     {
-
+        MeasuredValue = newValue;
+        MeasuredValueChanged?.Invoke(MeasuredValue);
     }
 
 }
