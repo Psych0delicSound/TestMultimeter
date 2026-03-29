@@ -1,4 +1,4 @@
-- [Form] (https://docs.google.com/forms/d/1VAb5QaxQYtxUldF6V5Sj_j3VbCKwHyGuxbXeQgnQD1Y/viewform?edit_requested=true)
+- [Form] (https://docs.google.com/forms/d/1VAb5QaxQYtxUldF6V5Sj_j3VbCKwHyGuxbXeQgnQD1Y/edit)
 - [Specification] (https://docs.google.com/document/d/1zoeTxvICNeYbC4yAZaXVYzHe88SzRhTwL3OrECdY6C0/edit?tab=t.0#heading=h.bccxzld7gctq)
 - [Microsoft Identifier Style] (https://learn.microsoft.com/ru-ru/dotnet/csharp/fundamentals/coding-style/identifier-names)
 
@@ -72,17 +72,15 @@ R = V * V / P
 ---
 
 - [x] View. Make HUD with all values (only one active, others are 0)
-	- [ ] Adapt HUD for scaling
+	- [x] Adapt HUD for scaling
 
 ---
 
-- [ ] Make Windows build and load to Releases in GitHub
+- [x] Make Windows build and load to Releases in GitHub
 
----
-
-- [ ] Fill and send Form
+- [x] Fill and send Form
 
 ===
 
 1 Day: 4 Hours
-2 Day: 3 Hours
+2 Day: 3 Hours 30 Minutes
